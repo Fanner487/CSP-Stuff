@@ -72,7 +72,7 @@ int main(int argc, char **argv){
 	}
 
 	
-	snprintf(buff, sizeof(buff), "MAIL FROM: <eamontang1@gmail.com>\r\n"); //construct data to return
+	snprintf(buff, sizeof(buff), "MAIL FROM: <theditdisciplinaryboard@dit.ie>\r\n"); //construct data to return
         Write(sockfd, buff, strlen(buff));
 
         while((n = read(sockfd, recvline, MAXLINE)) > 0) {
@@ -91,7 +91,7 @@ int main(int argc, char **argv){
 		err_sys("read error");
 	}
 
-	snprintf(buff, sizeof(buff), "RCPT TO: <c143843761@mydit.ie>\r\n"); //construct data to return
+	snprintf(buff, sizeof(buff), "RCPT TO: <c14341031@mydit.ie>\r\n"); //construct data to return
         Write(sockfd, buff, strlen(buff));
 
         while((n = read(sockfd, recvline, MAXLINE)) > 0) {
@@ -135,7 +135,7 @@ Hey Katie, the porters gave me a loan of a big fuck off ladder, should work real
 */
 
 
-	snprintf(buff, sizeof(buff), "From: eamontang1@gmail.com\r\nTo: c14383761@mydit.ie\r\nSubject: Disciplinary Board Meeting\r\n\r\nDear Mr. Murphy,\n\nIt has come to our attention that during the past semester you have been engaging in discriminatory acts of racism. Please note this is not tolerated in this college and is a direct violation of the DIT Student Charter, and we take these matters very seriously. We have been informed of this by your fellow student, Haashim Bari. Knowing this, we have decided to hold a meeting between yourself and Haashim to discuss the allegations.\n\nYou filthy, filthy racist\n\nWith love,\nPaul xoxo\r\n\r\n.\r\n"); //construct data to return
+	snprintf(buff, sizeof(buff), "From: theditdisciplinaryboard@dit.ie\r\nTo: c14341031@mydit.ie\r\nSubject: Disciplinary Board Meeting\r\n\r\nDear Mr. Murphy,\n\nIt has come to our attention that during the past semester you have been engaging in discriminatory acts of racism. Please note this is not tolerated in this college and is a direct violation of the DIT Student Charter, and we take these matters very seriously. We have been informed of this by your fellow student, Haashim Bari. Knowing this, we have decided to hold a meeting between yourself and Haashim to discuss the allegations.\n\nYou filthy, filthy racist\n\nWith love,\nPaul xoxo\r\n\r\n.\r\n"); //construct data to return
         Write(sockfd, buff, strlen(buff));
 
         while((n = read(sockfd, recvline, MAXLINE)) > 0) {
